@@ -1,0 +1,15 @@
+.section {
+    background-color: rgba(212, 212, 208, 0.932);
+    padding: 20px;
+    border: 2px solid #2e1414 ;
+    border-radius: 10px;
+    margin: 20px auto; 
+    width: 80%;
+    text-align: center;
+}
+
+.section__header {
+    color: #3a3939;
+    text-align: center;
+    font-size: 40px;
+}
