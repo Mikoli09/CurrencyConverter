@@ -21,6 +21,7 @@
     background-color: rgb(245, 245, 241);
     border-radius: 5px;
     cursor:pointer;
+    max-width: 100%;
 }
 
 .form__amount{
@@ -28,6 +29,7 @@
     padding: 20px;
     border: solid 2px;
     border-radius: 5px;
+    max-width: 100%;
 }
 
 .form__amount:required{
@@ -46,6 +48,7 @@
     border-radius: 5px;
     background-color: rgb(245, 245, 241);
     cursor: pointer;
+    overflow-x: auto;
 }
 
 .form__button:hover{
