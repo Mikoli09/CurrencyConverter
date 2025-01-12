@@ -10,7 +10,6 @@
         };
     };
 
-
     const toSubcurrencyConversion = (toConvert, convertedTo) => {
 
         if (toConvert == convertedTo)
@@ -27,7 +26,6 @@
             }
         }
     };
-
 
     const toTargetCurrencyConversion = (targetCurrency, intermediateResult) => {
 
@@ -48,14 +46,12 @@
         resultText.innerText = (`${amount.value} ${toConvert.value} = ${roundValue(result)} ${converted.value} `);
     };
 
-    
     const onFormSubmit = event => {
         event.preventDefault();
 
         const currencyToConvert = document.querySelector(".js-form__selectToConvert");
         const currencyConverted = document.querySelector(".js-form__selectConverted");
         let result;
-
 
         if (currencyToConvert.value !== currencyConverted.value) {
             result = toTargetCurrencyConversion(currencyConverted.value, toSubcurrencyConversion(currencyToConvert.value, currencyConverted.value));
